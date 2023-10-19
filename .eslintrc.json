@@ -1,3 +1,28 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["@tanstack/query"],
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": [".gitignore", ".prettierignore"],
+  "rules": {
+    "@tanstack/query/exhaustive-deps": "error",
+    "@tanstack/query/stable-query-client": "error",
+    "no-console": "off",
+    "no-undef": "off",
+    "valid-typeof": "off",
+    //"valid-typeof": ["error", { "requireStringLiterals": true }]
+    "spaced-comment": "off",
+    "sort-imports": "off",
+    "import/order": 0,
+    "no-debugger": "off",
+    "no-restricted-syntax": "warn"
+  }
 }

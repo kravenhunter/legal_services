@@ -1,0 +1,13 @@
+.block {
+  max-width: 1656px;
+}
+
+.bottom {
+  &__block {
+    width: 130px;
+    &__link {
+      width: 100%;
+      color: white;
+    }
+  }
+}
