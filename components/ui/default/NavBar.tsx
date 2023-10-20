@@ -134,7 +134,6 @@ const NavBar = () => {
           border-yellow-600
            py-2
            px-3
-
           rounded-md'>
             <BiSolidPhoneCall size={20} /> <span>Заказать звонок</span>
           </button>

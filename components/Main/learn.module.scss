@@ -1,0 +1,23 @@
+.pre {
+  white-space: pre-line;
+}
+.block {
+  position: relative;
+  max-height: 65px;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+  }
+  &__lines {
+    top: 15px;
+    position: absolute;
+    z-index: -10;
+  }
+}
+/* .title {
+  font-family: var(--font-garamond);
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+} */

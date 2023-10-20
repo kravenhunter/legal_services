@@ -1,0 +1,14 @@
+.block {
+  position: relative;
+  max-height: 65px;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+  }
+  &__lines {
+    top: 15px;
+    position: absolute;
+    z-index: -10;
+  }
+}
