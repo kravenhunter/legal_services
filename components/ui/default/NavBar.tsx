@@ -47,20 +47,7 @@ const navlinks = [
     title: "Contacts",
   },
 ];
-const socials = [
-  {
-    iconName: "ri:facebook-fill",
-  },
-  {
-    iconName: "mdi:twitter",
-  },
-  {
-    iconName: "mdi:youtube",
-  },
-  {
-    iconName: "mdi:instagram",
-  },
-];
+
 const NavBar = () => {
   return (
     <nav className={`${styles.block} h-40 mx-auto pt-5`}>

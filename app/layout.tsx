@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import { Footer, Header } from "@/components";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { EB_Garamond, Roboto } from "next/font/google";
 
 //React Query Provider
 // import { QueryClient } from "@tanstack/react-query";
@@ -14,6 +14,12 @@ const roboto = Roboto({
   display: "swap",
 });
 
+const garamond = EB_Garamond({
+  variable: "--font-garamond",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 export const metadata: Metadata = {
   title: "Legal Services",
   description: "Proviing help for sitizen",
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
 //SSR
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={roboto.className}>
+    <html lang='en' className={`${roboto.variable} ${garamond.variable}`}>
       <body>
         <Header />
         <main>{children}</main>
