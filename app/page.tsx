@@ -1,5 +1,5 @@
 import styles from "@/app/page.module.scss";
-import { Areas, Choose, Hero, Learn } from "@/components";
+import { Areas, Choose, Experts, Hero, LatestNews, Learn, Reviews } from "@/components";
 
 export default async function Home() {
   console.log("App");
@@ -12,6 +12,9 @@ export default async function Home() {
           <Learn />
           <Areas />
           <Choose />
+          <Experts />
+          <Reviews />
+          <LatestNews />
         </div>
       </div>
     </main>

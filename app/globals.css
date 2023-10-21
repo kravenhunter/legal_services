@@ -30,3 +30,9 @@ body {
   color: #000000;
   background: #ffffff;
 }
+.colorBg {
+  background: #aa9166;
+}
+.colorText {
+  color: #aa9166;
+}

@@ -23,19 +23,17 @@ const Learn = () => {
         <pre className={`${style.pre}`}>{learcCard.text}</pre>
         <Link
           href='#'
-          className='
+          className={`         
           mx-auto
           grid 
           place-content-center
           hover:bg-yellow-800
-         bg-slate-800 
+          bg-zinc-900
           w-48 
           h-14
-          text-white
-          border-solid border-2
-          border-yellow-600           
-          rounded-md         
-          '>
+          text-white                 
+          rounded-md   
+          `}>
           <span>LEARN MORE</span>
         </Link>
       </div>

@@ -3,8 +3,6 @@ import style from "@/components/Main/choose.module.scss";
 import Image from "next/image";
 import { GiGraduateCap } from "react-icons/gi";
 
-const title = "Why Choose Us";
-
 const choose = {
   imgBg:
     "https://eczanyjbasiipyhbsoep.supabase.co/storage/v1/object/public/images/galary/9430d0c3-660e-4163-89c7-dcb322e50a4d_galary_choose.webp",
@@ -32,7 +30,7 @@ const Choose = () => {
   return (
     <div className='choose flex gap-10'>
       <div className='choose_block grid gap-5'>
-        <Title title={title} />
+        <Title title={choose.title} />
         {chooseList?.map((item, index) => (
           <div key={index} className='chose_list flex gap-5  '>
             <div className='bg-black  w-48 h-44  grid place-content-center'>

@@ -44,34 +44,33 @@ const Areas = () => {
       <Title title={title} />
       <div className='card_list mt-8 flex flex-wrap justify-between '>
         {serviceList?.map((service, index) => (
-          <article
-            key={index}
-            className={`${style.card} mb-10  w-full h-full bg-black grid grid-rows-2 `}>
+          <article key={index} className={`${style.card} mb-10  w-full bg-black grid grid-rows-2 `}>
             <div className='h-full grid place-content-center'>
               <div className='icon_block bg-zinc-900 w-32 h-32 grid place-content-center'>
                 {service.icons(75)}
               </div>
             </div>
 
-            <div className='card_desc grid justify-items-center gap-5 py-5 h-full bg-zinc-900 text-white  '>
+            <div className='card_desc grid justify-items-center gap-5 py-5  bg-zinc-900 text-white  '>
               <h4 className={`${style.color} text-2xl italic font-mono font-bold`}>
                 {service.title}
               </h4>
               <p className='w-56 text-gray-400/75 text-center'>{service.subtitle}</p>
               <Link
                 href='#'
-                className='              
-                      grid 
+                className={`
+                ${style.color}
+                     grid 
                       place-content-center
                       hover:bg-yellow-800
+                      hover:text-white
                       bg-transparent
-                      w-48 
-                      h-14
-                      text-white
+                      w-32 
+                      h-11                 
+                      text-base
                       border-solid border-2
-                      border-yellow-800           
-                      rounded-md         
-                      '>
+                      border-yellow-800  
+                `}>
                 <span>LEARN MORE</span>
               </Link>
             </div>

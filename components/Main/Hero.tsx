@@ -43,11 +43,11 @@ const Hero = () => {
         height={529}
         priority
       />
-      <div className='hero_icons grid content-center  text-white h-96 bg-slate-950'>
+      <div className='hero_icons grid content-center  text-white h-96 bg-zinc-900'>
         <ul className='flex justify-around'>
           {serviceList?.map((icon, index) => (
             <li key={index} className='grid justify-items-center '>
-              {icon.icons(40)}
+              {icon.icons(50)}
 
               <h2 className={`${style.title} text-xl font-medium  font-mono `}>{icon.title}</h2>
               <span className='text-lg  text-gray-400/75'>{icon.subtitle}</span>
