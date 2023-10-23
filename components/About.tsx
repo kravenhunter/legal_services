@@ -5,8 +5,10 @@ import Image from "next/image";
 const content = {
   coverMain:
     "https://eczanyjbasiipyhbsoep.supabase.co/storage/v1/object/public/images/galary/8d5f39a2-7c78-4cfd-8f52-5a9e434ca762_galary_cover_legacy.webp",
+
   coverContent:
     "https://eczanyjbasiipyhbsoep.supabase.co/storage/v1/object/public/images/galary/fcfcb23a-2404-4db1-bcd7-98e334c033c5_galary_about_team.webp",
+
   title: "About US",
   subtitle: "Always on your side to defend you...",
 };

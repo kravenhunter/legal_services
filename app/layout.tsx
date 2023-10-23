@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' className={`${roboto.variable} ${garamond.variable}`}>
       <body>
         <Header />
-        <main>{children}</main>
+        <main className='size_block_primary mx-auto'>{children}</main>
         <Footer />
       </body>
     </html>

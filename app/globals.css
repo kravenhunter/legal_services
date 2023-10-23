@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  --primary-color: #aa9166;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -31,11 +32,18 @@ body {
   background: #ffffff;
 }
 .colorBg {
-  background: #aa9166;
+  background: var(--primary-color);
 }
 .colorText {
-  color: #aa9166;
+  color: var(--primary-color);
 }
 pre {
   white-space: pre-line;
+}
+
+.size_block_primary {
+  max-width: 1659px;
+}
+.size_block_second {
+  max-width: 1373px;
 }

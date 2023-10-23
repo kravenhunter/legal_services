@@ -1,54 +1,51 @@
+"use client";
+
 import styles from "@/components/ui/default/navBar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AiFillYoutube, AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook, BiSolidPhoneCall } from "react-icons/bi";
 
 const navlinks = [
   {
     path: "/",
-    title: "Home",
+    title: "HOME",
   },
   {
     path: "#",
-    title: "Get Help",
+    title: "GET HELP",
   },
   {
-    path: "#",
-    title: "For citizen",
+    path: "/blog/cases",
+    title: "PRACTICE",
   },
 
   {
-    path: "#",
-    title: "For busines",
+    path: "/blog/news",
+    title: "ARTICLES",
   },
   {
     path: "#",
-    title: "News",
+    title: "INTOMATION",
   },
   {
     path: "#",
-    title: "Information",
+    title: " ACTIVITIES",
   },
-  {
-    path: "#",
-    title: "Public Activities",
-  },
-  {
-    path: "#",
-    title: "Volunteer",
-  },
+
   {
     path: "/blog/about",
-    title: "About Us",
+    title: "ABOUT US",
   },
   {
-    path: "#",
-    title: "Contacts",
+    path: "/blog/contacts",
+    title: "CONTACTS",
   },
 ];
 
 const NavBar = () => {
+  const params = usePathname();
   return (
     <nav className={`${styles.block} h-40 mx-auto pt-5`}>
       <div className='nav__top  flex justify-between  w-full'>
@@ -68,11 +65,11 @@ const NavBar = () => {
         <div className='nav__top__contacts flex items-center gap-10'>
           <div className='nav__top__contacts__dates '>
             <h4>09:00 - 20:00</h4>
-            <h4>ежедневно по будням </h4>
+            <h4>Opening Hour Mon - Fri </h4>
           </div>
           <div className='nav__top__contacts__call flex flex-col items-center'>
             <h4>8 (495) 153-75-45</h4>
-            <h4>звоните нам для консультации </h4>
+            <h4>Call Us For Consultation </h4>
           </div>
           <div className='nav__top__contacts__socials flex items-center'>
             <ul className='nav__top__contacts__list flex gap-5 align-middle'>
@@ -115,11 +112,13 @@ const NavBar = () => {
               key={index}
               className={`${styles.bottom__block} 
               text-center 
-              hover:bg-yellow-800
+              hover:bg-yellow-800 
               border-solid border-2
-               border-gray-600 py-1`}>
-              <Link href={link.path} className={`${styles.bottom__block__link}`}>
-                <h4>{link.title}</h4>
+               border-gray-600 py-1
+               ${params === link.path ? "bg-yellow-800" : "border-gray-600"}
+               `}>
+              <Link href={link.path} className={`${styles.bottom__block__link}`} passHref>
+                {link.title}
               </Link>
             </li>
           ))}
@@ -135,7 +134,7 @@ const NavBar = () => {
            py-2
            px-3
           rounded-md'>
-            <BiSolidPhoneCall size={20} /> <span>Заказать звонок</span>
+            <BiSolidPhoneCall size={20} /> <span>Get Appointment</span>
           </button>
         </div>
       </div>
