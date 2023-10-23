@@ -1,6 +1,7 @@
 .block {
   position: relative;
   max-height: 65px;
+  z-index: 30;
 
   &__title {
     padding: 0;

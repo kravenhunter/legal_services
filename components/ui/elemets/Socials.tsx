@@ -2,13 +2,13 @@ import Link from "next/link";
 import { AiFillYoutube, AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 
-//Props with defaults
+//Props
 type Props = {
-  newClass: string | "socials";
-  sizeIcon: number | 30;
+  newClass?: string;
+  sizeIcon?: number;
 };
-
-const Socials = ({ newClass, sizeIcon }: Props) => {
+//Default condition props
+const Socials = ({ newClass = "socials", sizeIcon = 30 }: Props) => {
   return (
     <div className={`${newClass}  flex items-center`}>
       <ul className='socials__list flex gap-5 align-middle'>

@@ -1,5 +1,4 @@
 import { Title } from "@/components";
-import style from "@/components/Main/learn.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +19,7 @@ const Learn = () => {
       <div className='desctiprtion grid gap-10 grid-cols-[minmax(auto,_663px)] w-full '>
         <Title title={learcCard.title} />
 
-        <pre className={`${style.pre}`}>{learcCard.text}</pre>
+        <pre>{learcCard.text}</pre>
         <Link
           href='#'
           className={`         

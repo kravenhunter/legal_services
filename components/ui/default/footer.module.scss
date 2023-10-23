@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  display: grid;
+  &__subscribe_block {
+    justify-self: center;
+    width: min(100%, 625px);
+    position: absolute;
+    top: -20%;
+  }
+  &__content {
+    max-width: 1373px;
+  }
+}

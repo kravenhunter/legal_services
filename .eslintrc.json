@@ -15,6 +15,7 @@
   "rules": {
     "@tanstack/query/exhaustive-deps": "error",
     "@tanstack/query/stable-query-client": "error",
+    "react/no-unescaped-entities": "off",
     "no-console": "off",
     "no-undef": "off",
     "valid-typeof": "off",

@@ -1,3 +1,5 @@
+import { About } from "@/components";
+
 type Props = {
   params: {
     section: string;
@@ -5,5 +7,10 @@ type Props = {
 };
 
 export default async function Section({ params: { section } }: Props) {
-  return <h3>{section}</h3>;
+  console.log(section);
+  if (section === "about") {
+    return <About />;
+  } else {
+    throw new Error("Bad Request");
+  }
 }

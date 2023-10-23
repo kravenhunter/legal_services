@@ -36,3 +36,6 @@ body {
 .colorText {
   color: #aa9166;
 }
+pre {
+  white-space: pre-line;
+}

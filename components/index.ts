@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Areas from "@/components/Main/Areas";
 import Choose from "@/components/Main/Choose";
 import Experts from "@/components/Main/Experts";
@@ -13,8 +14,10 @@ import Header from "@/components/ui/default/Header";
 import NavBar from "@/components/ui/default/NavBar";
 import ButtonReview from "@/components/ui/elemets/ButtonReview";
 import Socials from "@/components/ui/elemets/Socials";
+import Subscribe from "@/components/ui/elemets/Subscribe";
 import Title from "@/components/ui/elemets/Title";
 export {
+  About,
   Areas,
   ButtonReview,
   Choose,
@@ -29,6 +32,7 @@ export {
   NavBar,
   Reviews,
   Socials,
+  Subscribe,
   TanstackProvider,
   Title,
 };

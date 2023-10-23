@@ -6,7 +6,7 @@ import { BiLogoFacebook, BiSolidPhoneCall } from "react-icons/bi";
 
 const navlinks = [
   {
-    path: "#",
+    path: "/",
     title: "Home",
   },
   {
@@ -39,7 +39,7 @@ const navlinks = [
     title: "Volunteer",
   },
   {
-    path: "#",
+    path: "/blog/about",
     title: "About Us",
   },
   {
