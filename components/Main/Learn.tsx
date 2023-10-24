@@ -21,7 +21,7 @@ const Learn = () => {
 
         <pre>{learcCard.text}</pre>
         <Link
-          href='#'
+          href='/blog/about'
           className={`         
           mx-auto
           grid 

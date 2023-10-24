@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+
 import { Footer, Header } from "@/components";
 import type { Metadata } from "next";
 import { EB_Garamond, Roboto } from "next/font/google";
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 //SSR
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className={`${roboto.variable} ${garamond.variable}`}>
+    <html lang='en' className={`${roboto.variable} ${garamond.variable} `}>
       <body>
         <Header />
         <main className='size_block_primary mx-auto'>{children}</main>

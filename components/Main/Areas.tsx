@@ -42,7 +42,7 @@ const Areas = () => {
   return (
     <div className='areas'>
       <Title title={title} />
-      <div className='card_list mt-8 flex flex-wrap justify-between '>
+      <div className='card_list mt-8 flex gap-7 flex-wrap justify-between '>
         {serviceList?.map((service, index) => (
           <article key={index} className={`${style.card} mb-10  w-full bg-black grid grid-rows-2 `}>
             <div className='h-full grid place-content-center'>
