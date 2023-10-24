@@ -47,7 +47,7 @@ const Hero = () => {
         />
         <div className='hero_text grid gap-5 absolute place-self-center'>
           <h2 className='text-white text-center text-4xl  font-mono italic font-semibold'>
-            We are fight for your justice
+            We fight for your justice
           </h2>
           <h4 className='text-white garamond_regular text-2xl font-mono  font-normal'>
             We fight, we dare, we end our hunger for justice
